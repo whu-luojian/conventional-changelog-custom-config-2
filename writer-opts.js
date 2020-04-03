@@ -20,6 +20,7 @@ if (typeof bugsUrl !== 'string') bugsUrl = false
 let emojis = changelog ? changelog.emojis || false : false
 let authorName = changelog ? changelog.authorName || false : false
 let authorEmail = changelog ? changelog.authorEmail || false : false
+let commitTypes = changelog ? changelog.commitTypes || false : false
 
 let gitUserInfo = ''
 if (authorName && authorEmail) {
@@ -52,6 +53,11 @@ module.exports = Q.all([
 function getWriterOpts() {
   return {
     transform: (commit, context) => {
+      if (commitTypes && commitTypes.length) {
+        if (!commitTypes.includes(commit.type)) {
+          return ''
+        }
+      }
       let discard = true
       const issues = []
 

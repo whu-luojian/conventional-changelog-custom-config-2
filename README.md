@@ -1,4 +1,4 @@
-<h1 align="center">conventional-changelog-custom-config</h1>
+<h1 align="center">conventional-changelog-custom-config-2</h1>
 <p>
   <a href="https://github.com/ITxiaohao/conventional-changelog-custom-config#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
@@ -10,11 +10,14 @@
 
 > This preset extends the [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-angular/README.md) preset
 
+### fork from [conventional-changelog-custom-config](https://github.com/ITxiaohao/conventional-changelog-custom-config)
+
 ### Differences to [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-angular/README.md)
 
 - 使用 **redmine** 或者其他工具管理项目，可以将 GitHub/GitLab 的 **issues** 地址替换成 **bugsUrl** 中的地址
 - 显示 commit 对应的**提交人**及**邮箱地址**
 - 使用 **emojis**
+- 使用 **commitTypes** 限制生成 CHANGELOG 的 commit type
 
 前置插件准备
 
@@ -30,7 +33,7 @@ npm install --save-dev release-it
 ```
 
 ```sh
-npm install conventional-changelog-custom-config --save-dev
+npm install conventional-changelog-custom-config-2 --save-dev
 ```
 
 ## Configuration
@@ -44,7 +47,7 @@ npm install conventional-changelog-custom-config --save-dev
   "scripts": {
     "commit": "git-cz && git push",
     "release": "release-it",
-    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0"
+    "changelog": "conventional-changelog -p custom-config-2 -i CHANGELOG.md -s -r 0"
   },
   "repository": {
     "type": "git",
@@ -59,7 +62,8 @@ npm install conventional-changelog-custom-config --save-dev
     "bugsUrl": "https://redmine.example.com/issues/",
     "emojis": true,
     "authorName": true,
-    "authorEmail": true
+    "authorEmail": true,
+    "commitTypes": ["feat", "fix", "docs"]
   }
 }
 ```
@@ -106,6 +110,12 @@ Type: `boolean` Default: `false`
 
 在 CHANGELOG 中生成邮箱
 
+**commitTypes**
+
+Type: `Array` Default: 不做类型校验
+
+只生成指定commit type 的 CHANGELOG
+
 ## Usage
 
 生成 CHANGELOG 之前得**先** commit，记得在 **master** **主分支**上发布版本，再生成 CHANGELOG，流程如下：
@@ -130,11 +140,8 @@ npm run changelog
 
 Give a ⭐️ if this project helped you!
 
-## 📝 License
-
-Copyright © 2019 [zengshunhao](https://github.com/ITxiaohao).<br />
-This project is [MIT](https://github.com/ITxiaohao/conventional-changelog-custom-config/blob/master/LICENSE) licensed.
 
 ## Thanks
 
 Thanks to [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
+Thanks to [conventional-changelog-custom-config](https://github.com/ITxiaohao/conventional-changelog-custom-config)
