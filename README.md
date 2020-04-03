@@ -10,7 +10,7 @@
 
 > This preset extends the [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-angular/README.md) preset
 
-### fork from [conventional-changelog-custom-config](https://github.com/ITxiaohao/conventional-changelog-custom-config)
+### ⭐️⭐️⭐️ fork from [conventional-changelog-custom-config](https://github.com/ITxiaohao/conventional-changelog-custom-config)
 
 ### Differences to [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog-angular/README.md)
 
@@ -143,5 +143,5 @@ Give a ⭐️ if this project helped you!
 
 ## Thanks
 
-Thanks to [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
-Thanks to [conventional-changelog-custom-config](https://github.com/ITxiaohao/conventional-changelog-custom-config)
+- Thanks to [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
+- Thanks to [conventional-changelog-custom-config](https://github.com/ITxiaohao/conventional-changelog-custom-config)

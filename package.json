@@ -1,5 +1,5 @@
 {
-  "name": "conventional-changelog-custom-config",
+  "name": "conventional-changelog-custom-config-2",
   "version": "0.3.1",
   "description": "This preset extends the angular preset",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ITxiaohao/conventional-changelog-custom-config.git"
+    "url": "git+https://github.com/whu-luojian/conventional-changelog-custom-config-2.git"
   },
   "config": {
     "commitizen": {
@@ -25,12 +25,12 @@
     "changelog",
     "emoji"
   ],
-  "author": "Zeng Shunhao <shunhaozeng@gmail.com>",
+  "author": "whu-luojian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ITxiaohao/conventional-changelog-custom-config/issues"
+    "url": "https://github.com/whu-luojian/conventional-changelog-custom-config-2/issues"
   },
-  "homepage": "https://github.com/ITxiaohao/conventional-changelog-custom-config#readme",
+  "homepage": "https://github.com/whu-luojian/conventional-changelog-custom-config-2#readme",
   "devDependencies": {
     "better-than-before": "^1.0.0",
     "chai": "^4.2.0",
@@ -53,6 +53,7 @@
   "changelog": {
     "emojis": true,
     "authorName": true,
-    "authorEmail": true
+    "authorEmail": true,
+    "commitTypes": ["feat", "fix", "docs"]
   }
 }
